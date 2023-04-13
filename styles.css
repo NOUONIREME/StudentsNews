@@ -11,6 +11,10 @@ body {
   background-color: white;
 }
 
+@media screen and (max-width: 768px) {
+  /* Styles pour les écrans de moins de 768px de largeur */
+}
+
  
 
 header h2 {

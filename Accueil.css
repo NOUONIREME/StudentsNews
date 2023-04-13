@@ -1,0 +1,142 @@
+/* Reset CSS pour réinitialiser les styles par défaut du navigateur */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+ 
+
+h2 {
+  color: #252525;
+  
+}
+
+/* Styles pour l'en-tête */
+header {
+  background-color: #007BFF;
+  color: #FFF;
+  padding: 20px;
+}
+
+/* Styles pour la navigation */
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  color: #FFF;
+  padding: 15px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #007BFF;
+}
+
+/* Styles pour les sections */
+section {
+  padding: 20px;
+}
+
+/* Styles pour les événements et annonces */
+section ul {
+  list-style-type: none;
+}
+
+section ul li {
+  margin-bottom: 20px;
+}
+
+section h3 {
+  margin-bottom: 5px;
+}
+
+section p {
+  color: #777;
+}
+
+/* Styles pour le pied de page */
+footer {
+  background-color: #007BFF;
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styles pour le conteneur principal */
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 70vh;
+    }
+
+    /* Styles pour la section de contenu */
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 800px;
+      padding: 90px;
+      width: 100%;
+      float: left;
+      margin-right: 200px;
+    }
+
+    /* Styles pour l'image */
+    .image {
+      flex: 1;
+    }
+
+    /* Styles pour le texte */
+    .text {
+      flex: 1;
+      padding-left: 0px;
+      padding-right: -20px;
+    }
+
+    /* Styles pour les articles */
+    .article {
+      margin-top: 20px;
+      
+    }
+
+    /* Styles pour les liens d'articles */
+    .article a {
+      display: block;
+      padding: 10px;
+      background-color: #007BFF;
+      text-decoration: none;
+      color: #000;
+      transition: background-color 0.3s ease;
+    }
+
+p {
+  text-align: center;
+  color: blue;
+}
+h2 {
+  text-align: center;
+}
+
+    /* Styles pour les liens d'articles au survol */
+    .article a:hover {
+      background-color:#007BFF;
+    }
+		

@@ -126,6 +126,12 @@ footer {
       color: #000;
       transition: background-color 0.3s ease;
     }
+.footer {
+  height: 40px; /* Hauteur du pied de page */
+  background-color: #007BFF; /* Couleur de fond du pied de page */
+  position: sticky;
+  bottom: 0;
+}
 
 p {
   text-align: center;

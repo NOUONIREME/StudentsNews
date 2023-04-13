@@ -131,6 +131,10 @@ footer {
   background-color: #007BFF; /* Couleur de fond du pied de page */
   position: sticky;
   bottom: 0;
+  position: absolute; /* Positionnement absolu */
+  bottom: 0; /* Positionnement en bas */
+  left: 0; /* Positionnement à gauche */
+  width: 100%; /* Largeur de 100% pour occuper toute la largeur du conteneur parent */
 }
 
 p {

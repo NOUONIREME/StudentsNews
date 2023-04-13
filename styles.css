@@ -88,3 +88,9 @@ footer {
   text-align: center;
 }
 
+.footer {
+  height: 40px; /* Hauteur du pied de page */
+  background-color: #007BFF; /* Couleur de fond du pied de page */
+  position: sticky;
+  bottom: 0;
+}

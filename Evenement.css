@@ -16,6 +16,12 @@ h2 {
   color: #252525;
   
 }
+.footer {
+  height: 40px; /* Hauteur du pied de page */
+  background-color: #007BFF; /* Couleur de fond du pied de page */
+  position: sticky;
+  bottom: 0;
+}
 
 /* Styles pour l'en-tête */
 header {

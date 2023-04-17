@@ -1,52 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Annonces et Événements Étudiants</title>
-  <link rel="stylesheet" href="Accueil.css">
+  <title>Page d'accueil</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    p {
+      font-size: 16px;
+      color: #777;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      font-size: 12px;
+      text-align: center;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      cursor: pointer;
+      width: 100px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h2>Annonces et Événements Étudiants</h2>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="Evenement.html">Événements</a></li>
-      <li><a href="Annonces.html">Annonces</a></li>
-      <li><a href="Contacts.html">Contact</a></li>
-    </ul>
-  </nav>
-   <section id="accueil">
-      <h2>Bienvenue sur votre site web d'annonces et d'événements étudiants</h2>
-      <p>Restez informé des derniers événements et annonces destinés aux étudiants de l'ESCO-IGES .</p>
-    </section>
-   <div class="container">
-    <div class="content">
-      <div class="image">
-        <img src="1.jpg" alt="Image d'accueil">
-      </div>
-      <section id="text">
-        <h3>Explorez les horizons de votre savoir</h3><br>
-        <p>Soyez informé en temps réel sur tout ce qui se passe dans votre université grâce à votre site web d'annonces universitaires !</p>
-       </section>
-      <div class="articles">
-        <div class="article">
-          <a href="Annonces.html">Annonces</a>
-        </div>
-        <div class="article">
-          <a href="Evenement.html">Evénements</a>
-        </div>
-        <div class="article">
-          <a href="Contacts.html">Contact</a>
-        </div>
-      </div>
+  <div class="container">
+    
+    <h1>Bienvenue sur votre site web d'annonces et d'événements étudiants</h1>
+    <p>Restez informé des derniers événements et annonces destinés aux étudiants de l'ESCO-IGES.</p>
+    <img src="1.jpg" alt="Image d'accueil">
+    
+    <div class="btn-container">
+      <button class="btn">Annonces</button>
+      <button class="btn">Evénements</button>
+      <button class="btn">Contacts</button>
     </div>
   </div>
- 
-  <footer class="footer">
-    <p>Tous droits réservés &copy; 2023. Annonces et Événements Étudiants.</p>
-  </footer>
 </body>
 </html>
 

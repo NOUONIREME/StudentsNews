@@ -79,30 +79,8 @@ footer {
   text-align: center;
 }
 
-/* Styles pour le conteneur principal */
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 70vh;
-    }
 
-    /* Styles pour la section de contenu */
-    .content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 800px;
-      padding: 90px;
-      width: 100%;
-      float: left;
-      margin-right: 200px;
-    }
-
-    /* Styles pour l'image */
-    .image {
-      flex: 1;
-    }
+   
 
     /* Styles pour le texte */
     .text {
@@ -111,21 +89,7 @@ footer {
       padding-right: -20px;
     }
 
-    /* Styles pour les articles */
-    .article {
-      margin-top: 20px;
-      
-    }
 
-    /* Styles pour les liens d'articles */
-    .article a {
-      display: block;
-      padding: 10px;
-      background-color: #007BFF;
-      text-decoration: none;
-      color: #000;
-      transition: background-color 0.3s ease;
-    }
 .footer {
   height: 40px; /* Hauteur du pied de page */
   background-color: #007BFF; /* Couleur de fond du pied de page */
@@ -140,8 +104,58 @@ h2 {
   text-align: center;
 }
 
-    /* Styles pour les liens d'articles au survol */
-    .article a:hover {
-      background-color:#007BFF;
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
     }
-		
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    p {
+      font-size: 16px;
+      color: #777;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+       width: 100%;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      font-size: 12px;
+      text-align: center;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      cursor: pointer;
+      width: 100px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+ 
+
+

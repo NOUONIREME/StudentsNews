@@ -18,38 +18,59 @@
     </ul>
   </nav>
   <main>
-  
-  <section id="evenements">
-    <h2>Annonces</h2> <br>
-      <ul>
-      <li>
-        <h3>Demi final de la coupe du Directeur de ESCO-IGES</h3>
-        <p>Date : 14 Avril 2023</p>
-        <p>Description : GRI vs SIÈGE.</p>
-      </li>
-      <li>
-        <h3>Conférence sur la salubrité</h3>
-        <p>Date : 29 Avril 2023</p>
-        <p>Description :La conférence aura lieu à la grande salle de l'ANNEXE .</p>
-      </li>
-    </ul>
+   <h1>Annonces d'information</h1>
+  <div class="announcement-list" id="announcement-list">
+    <!-- Les annonces seront ajoutées dynamiquement ici avec JavaScript -->
+  </div>
 
-  </section>
-  <section id="nouvelles">
-    <h2>Nouvelles</h2><br>
-    <ul>
-      <li>
-        <h3>Ilboudo Rachid est un PD </h3>
-        <p>Date : 17 Avril 2023</p>
-        <p>Description :  Il vient de le confirmé lui meme .</p>
-      </li>
-      <li>
-        <h3>Formation sur l'environnement</h3>
-        <p>Date : Bientôt </p>
-        <p></p>
-      </li>
-    </ul>
-  </section>
+  <script>
+    // Exemple de données d'annonce (peut être remplacé par des données provenant d'une source de données externe)
+    var announcements = [
+      {
+        title: "Nouvelle offre de cours",
+        content: "Nous sommes heureux de vous annoncer que nous ajoutons un nouveau cours sur le développement web avancé à notre programme pour le semestre d'automne 2023. Les inscriptions sont maintenant ouvertes !",
+        date: "1er avril 2023"
+      },
+      {
+        title: "Conférence sur l'intelligence artificielle",
+        content: "Une conférence sur l'intelligence artificielle sera organisée le 15 mai 2023 dans l'amphithéâtre B. Venez découvrir les dernières avancées dans le domaine de l'IA et rencontrer des experts de l'industrie.",
+        date: "28 mars 2023"
+      },
+      {
+        title: "Changement d'horaire des cours",
+        content: "En raison d'un conflit de calendrier, certains cours du département d'informatique auront des horaires modifiés à partir du 1er mai 2023. Veuillez consulter l'emploi du temps mis à jour sur le site web de l'université.",
+        date: "15 mars 2023"
+      }
+    ];
+
+    // Fonction pour ajouter les annonces à la liste
+    function addAnnouncementsToDOM() {
+      var announcementList = document.getElementById("announcement-list");
+
+      // Parcourir les données d'annonce et créer les éléments HTML correspondants
+      announcements.forEach(function(announcement) {
+        var announcementItem = document.createElement("div");
+        announcementItem.className = "announcement-item";
+
+        var announcementTitle = document.createElement("h2");
+        announcementTitle.textContent = announcement.title;
+        announcementItem.appendChild(announcementTitle);
+
+        var announcementContent = document.createElement("p");
+        announcementContent.textContent = announcement.content;
+        announcementItem.appendChild(announcementContent);
+
+        var announcementDate = document.createElement("p");
+        announcementDate.textContent = "Date : " + announcement.date;
+        announcementItem.appendChild(announcementDate);
+
+        announcementList.appendChild(announcementItem);
+      });
+    }
+
+    // Appeler la fonction pour ajouter les annonces à la liste
+    addAnnouncementsToDOM();
+  </script>
   
   	
   </main>

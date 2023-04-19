@@ -9,6 +9,30 @@ body {
   padding: 0;
   background-color: white;
 }
+
+
+  h1 {
+      text-align: center;
+    }
+
+    .announcement-list {
+      margin-top: 20px;
+    }
+
+    .announcement-item {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .announcement-item h2 {
+      margin-top: 0;
+    }
+
+    .announcement-item p {
+      margin-bottom: 0;
+    }
 .footer {
   height: 40px; /* Hauteur du pied de page */
   background-color: #007BFF; /* Couleur de fond du pied de page */
